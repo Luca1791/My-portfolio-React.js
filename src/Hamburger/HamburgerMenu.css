@@ -1,0 +1,140 @@
+/* ---------------------menu mobile--------------------- */
+.container{
+
+    display: none;
+  }
+  
+.nav_bar{
+    width: 300px;
+    height: 100vh;
+    background: #262626;
+    position: fixed;
+    top:0;
+    right: -300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20% 0 0 60%;
+    transition: right .8s cubic-bezier(1, 0, 1);
+    z-index: 9999999999999999;
+  }
+  
+  .change{
+    right: 0;
+  }
+  
+
+  #hamburger-menu{
+    width: 35px;
+    height: 30px;
+    position: fixed;
+    top: 50px;
+    right: 55px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .line{
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right bottom, rgb(149 193 31), rgb(149 193 31));
+    transition: all 0.8s;
+  }
+  
+  .change .line-1{
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+  }
+  .change .line-2{
+    opacity: 0;
+  }
+  .change .line-3{
+    transform: rotateZ(405deg) translate(-8px, -6px);
+  }
+  .nav-list{
+    /* text-align: right; */
+    margin-left: 40px;
+  }
+  
+  .nav-item{
+    list-style: none;
+    margin: 25px;
+    margin-left: -35px;
+  }
+  
+  a.nav-link.home {
+    margin-right: 13px;
+  }
+  
+  /* a.nav-link.contatti {
+    margin-right: -30px;
+  } */
+  
+  a.nav-link:hover{color: green; font-weight: bold;}
+  .nav-link{
+    text-decoration: none;
+    font-size: 22px;
+    color: #eee;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: Rubik Glitch;
+    text-transform: uppercase;
+    position: relative;
+    padding: 3px 0;
+  }
+  
+  .nav-link:before,
+  .nav-link:after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+  }
+  .nav-link:after{
+    bottom: 0;
+    transform-origin: right;
+    
+  }
+  a.nav-link.contatti:after{
+    bottom: 22px;
+  }
+  
+  .nav-link:before{
+    top: 0;
+    transform-origin: left;
+  }
+  
+  .nav-link:hover:before,
+  .nav-link:hover:after{
+    transform: scaleX(1);
+  }
+  #contatti{display: none;}
+  
+  
+  
+  /*-------------------Mediaquery Smartphone Menu--------------------- */
+  @media (max-width: 768px) {
+    /* .cta {display: none;} */
+    .navbar{
+      display: none;
+    }
+    
+    .container{
+      display: block;
+    }
+    .logo{display: none;}
+    .log_o{
+      z-index: 1;
+      position:relative;
+      top: -235px;
+      left: 35px
+      
+    }
+    .hea_der{display: none;}
+    .header{position: fixed;}
+    #contatti{display: block;}
+  }

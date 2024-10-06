@@ -1,0 +1,25 @@
+.FootContain{
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.FootContain h3{
+    color: #95C11F;
+}
+.ConteIcon{
+    display: flex;
+}
+.IconSize{
+    width: 50px;
+    padding: 30px;
+    height: 50px;
+    transition: transform 0.25s ease-in-out;
+}
+.IconSize:hover{
+    transform: scale(1.1);
+}
