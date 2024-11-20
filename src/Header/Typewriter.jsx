@@ -34,7 +34,7 @@ const MyComponent = () => {
           Hi! My name is
         </h2>
         <h1 className='text_intro' id='bounce' ref={boxRef}>
-            Luca De Magistris
+            LucaWb
 
         </h1>
         <h2 className='subtitlesText'>
