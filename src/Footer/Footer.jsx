@@ -24,7 +24,7 @@ function Footer() {
                 </a>
             </div>
             <h3>
-            Created by Luca De Magistris
+            Created by LucaWb
             </h3>
         </div>
 
