@@ -135,6 +135,7 @@
 
 @media (max-width: 768px) {
     .AbautContainer{
+        height: auto;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: center;
